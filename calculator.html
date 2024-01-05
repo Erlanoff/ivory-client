@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calc.css">
+</head>
+<body class="calc-body">
+    <header class="header">
+        <!-- Main nav -->
+        <nav class="navbar bg">
+        <a href="/" class="logo"><img src="./img/logo.png" alt="" class="logo__img"/></a>
+        <ul class="menu">
+            <li class="menu__item"><a href="tracker.html" class="menu__link">Трекер</a></li>
+            <li class="menu__item"><a href="calculator.html" class="menu__link">Калькулятор</a></li>
+            <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+        <a href="#" class="btn">Связаться</a>
+        </nav>
+
+        <!-- Burger menu -->
+        <nav class="burger_menu bg">
+            <a href="/"><img src="./img/logo.png" alt="" class="logo__img"/></a>
+            <img src="./img/burger-menu-icon.svg" class="burgerBtn" alt="burger-menu-icon.svg">
+            <ul class="mob_menu bg">
+                <li class="menu__item"><a href="/client/tracker.html" class="menu__link">Трекер</a></li>
+                <li class="menu__item"><a href="/client/calculator" class="menu__link">Калькулятор</a></li>
+                <li class="menu__item"><a href="/client/contacts" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="body"></div>
+        <!-- Hz -->
+    </header>
+  
+    <main class="main">
+        <section class="calc">
+            <div class="container calc-wrap">
+                <div class="col-1">
+                    <div class="grid cloth-category">
+                        <h1 class="cloth-title">Выберите категорию одежды</h1>
+                        <div class="flex">
+                            <button class="radio-btn fw-500 tab-btn" data-tab="#male" data-name="Мужская">Мужская</button>
+                            <button class="radio-btn fw-500 tab-btn" data-tab="#female" data-name="Женская">Женская</button>
+                            <button class="radio-btn fw-500 tab-btn" data-tab="#child" data-name="Детская">Детская</button>
+                        </div>
+                    </div>
+                    <div class="cloth-type">
+                        <h2 class="calc-title">Выберите тип одежды</h2>
+                        <div class="flex tab-item active-tab" id="male">
+                            <button class="radio-btn" data-name="Футболка" data-price="150">Футболка</button>
+                            <button class="radio-btn" data-name="Штаны" data-price="200">Штаны</button>
+                            <button class="radio-btn" data-name="Худи" data-price="200">Худи</button>
+                            <button class="radio-btn" data-name="Рубашка" data-price="180">Рубашка</button>
+                            <button class="radio-btn" data-name="Костюм" data-price="330">Костюм</button>
+                            <button class="radio-btn" data-name="Пальто" data-price="420">Пальто</button>
+                            <button class="radio-btn" data-name="Боксеры" data-price="60">Боксеры</button>
+                            <button class="radio-btn" data-name="Шорты" data-price="100">Шорты</button>
+                        </div>
+                        <div class="flex tab-item" id="female">
+                            <button class="radio-btn" data-name="Футболка" data-price="150">Футболка</button>
+                            <button class="radio-btn" data-name="Штаны" data-price="200">Штаны</button>
+                            <button class="radio-btn" data-name="Худи" data-price="200">Худи</button>
+                            <button class="radio-btn" data-name="Рубашка" data-price="180">Рубашка</button>
+                            <button class="radio-btn" data-name="Костюм" data-price="330">Костюм</button>
+                            <button class="radio-btn" data-name="Пальто" data-price="450">Пальто</button>
+                            <button class="radio-btn" data-name="Боксеры" data-price="60">Боксеры</button>
+                            <button class="radio-btn" data-name="Шорты" data-price="100">Шорты</button>
+                            <button class="radio-btn" data-name="Юбка" data-price="150">Юбка</button>
+                            <button class="radio-btn" data-name="Лонгслив" data-price="180">Лонгслив</button>
+                            <button class="radio-btn" data-name="Кардиган" data-price="350">Кардиган</button>
+                            <button class="radio-btn" data-name="Легинсы" data-price="180">Легинсы</button>
+
+                        </div>
+                        <div class="flex tab-item" id="child">
+                            <button class="radio-btn" data-name="Слипы" data-price="80">Слипы</button>
+                            <button class="radio-btn" data-name="Комбинезон" data-price="150">Комбинезон</button>
+                            <button class="radio-btn" data-name="Худи" data-price="150">Худи</button>
+                            <button class="radio-btn" data-name="Футболка" data-price="80">Футболка</button>
+                            <button class="radio-btn" data-name="Штаны" data-price="70">Штаны</button>
+                        </div>
+                    </div>
+                    <div class="textiles-type textiles">
+                        <h2 class="calc-title">Выберите ткань для одежды</h2>
+                        <button class="radio-btn" data-name="Вискоза" data-price="180">Вискоза</button>
+                        <button class="radio-btn" data-name="Шелк" data-price="270">Шелк</button>
+                        <button class="radio-btn" data-name="Кашемир" data-price="230">Кашемир</button>
+                        <button class="radio-btn" data-name="Лапша" data-price="180">Лапша</button>
+                        <button class="radio-btn" data-name="Хлопок" data-price="160">Хлопок</button>
+                        <button class="radio-btn" data-name="ХБ" data-price="180">ХБ</button>
+                        <button class="radio-btn" data-name="Синтетика" data-price="150">Синтетика</button>
+                        <button class="radio-btn" data-name="Твид" data-price="270">Твид</button>
+                        <button class="radio-btn" data-name="Кулирка" data-price="370">Кулирка</button>
+                        <button class="radio-btn" data-name="ТБНТ" data-price="380">Терхнитка без начеса (Турция)</button>
+                        <button class="radio-btn" data-name="ТНСТ" data-price="380">Трехнитка с начесом (Турция)</button>
+                        <button class="radio-btn" data-name="ТБНК" data-price="200">Трехнитка без начеса (Китай)</button>
+                        <button class="radio-btn" data-name="ТСНК" data-price="200">Трехнитка с начесом (Китай)</button>
+                        <button class="radio-btn" data-name="ДБН" data-price="320">Двухнитка без начеса</button>
+                        <button class="radio-btn" data-name="ДСН" data-price="320">Двухнитка с начесом</button>
+                        <button class="radio-btn" data-name="Суперм" data-price="320">Двухнитка без начеса</button>
+                        <button class="radio-btn" data-name="Интерлок" data-price="350">Интерлок</button>
+                        <button class="radio-btn" data-name="Сатин" data-price="180">Сатин</button>
+                        <button class="radio-btn" data-name="Барашек" data-price="320">Барашек</button>
+                        <button class="radio-btn" data-name="Туран" data-price="220">Туран</button>
+                        <button class="radio-btn" data-name="Вельвет" data-price="220">Вельвет</button>
+                        <button class="radio-btn" data-name="Вилюр" data-price="280">Вилюр</button>
+                        <button class="radio-btn" data-name="Трикотаж" data-price="270">Трикотаж</button>
+                        <button class="radio-btn" data-name="Лен" data-price="180">Лен</button>
+                        <button class="radio-btn" data-name="Муслин" data-price="180">Муслин</button>
+                        <button class="radio-btn" data-name="Карго" data-price="180">Карго</button>
+                        <button class="radio-btn" data-name="Плащевка" data-price="180">Плащевка</button>
+                        <button class="radio-btn" data-name="Костюмка" data-price="220">Костюмка</button>
+                        <button class="radio-btn" data-name="Лакоста" data-price="270">Лакоста</button>
+                        <button class="radio-btn" data-name="Оксфорд" data-price="270">Оксфорд</button>
+                    </div>
+                    <div class="color">
+                        <h2 class=" calc-title color__title">Выберите цвет</h2>
+                        <button class="radio-btn" data-name="Черный">Черный</button>
+                        <button class="radio-btn" data-name="Белый">Белый</button>
+                        <button class="radio-btn" data-name="Желтый">Желтый</button>
+                        <button class="radio-btn" data-name="Синий">Синий</button>
+                        <button class="radio-btn" data-name="Зеленый">Зеленый</button>
+                        <button class="radio-btn" data-name="Голубой">Голубой</button>
+                        <button class="radio-btn" data-name="Серый">Серый</button>
+                        <button class="radio-btn" data-name="Красный">Красный</button>
+                        <button class="radio-btn" data-name="Розовый">Розовый</button>
+                        <button class="radio-btn" data-name="Бордовый">Бордовый</button>
+                    </div>
+                    <!-- <form action="">
+                    </form> -->
+                    <div class="count">
+                        <h2 class="calc-title count__title">Выберите количество</h2>
+                        <div class="flex">
+                            <button class="minus" id="decrementBtn" onclick="decrement()">-</button>
+                            <span class="counter" id="counter">200</span>
+                            <button class="plus" id="incrementBtn" onclick="increment()">+</button>
+                            <!-- <span class="minus">-</span>
+                            <div class="count">200</div>
+                            <span class="plus">+</span> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="results">
+                    <h6 class="results-title">
+                        <span class="decor-line"></span>
+                        Итоги заказа
+                    </h6>
+                    <ul class="results-data">
+                        <li >Категория: <span id="category-data"></span></li>
+                        <li >Тип: <span id="type-data"></span> </li>
+                        <li >Ткань: <span id="textile-data"></span> </li>
+                        <li >Цвет: <span id="color-data"></span> </li>
+                        <li >Кол-во: <span id="count-data">200</span> </li>
+                        <li >Цена: <span id="price-data">0</span> </li>
+                    </ul>
+
+                    <form action="post" class="form">
+                        <h6 class="results-title form-title"><span class="decor-line"></span>
+                            Для заказа заполните форму
+                        </h6>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="phone" name="phone" placeholder="Номер телефона">
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn form-btn">Отправить на разработку</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

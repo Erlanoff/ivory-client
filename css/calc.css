@@ -1,0 +1,170 @@
+html {
+    font-size: 16px;
+}
+
+.calc-body {
+    background-color: #F0F0F0;
+    overflow-x: hidden;
+}
+
+.calc {
+    margin-top: 30px;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.calc-wrap {
+    display: grid;
+    grid-template-columns: 800px 530px;
+    /* grid-template-rows: ; */
+    grid-gap: 30px;
+}
+
+.cloth-type {
+    margin-top: 15px;
+}
+
+.calc-title {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: none;
+    color: var(--color-text);
+}
+/* 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, max-content))
+}
+
+.cloth-category {
+    gap: 10px;
+}
+.cloth-title {
+    font-size: 1.75rem;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.radio-btn {
+    margin: 0 8px 8px 0;
+    font-size: 1rem;
+    border: 0;
+    background-color: #fff;
+    padding: 10px;
+    color: #414141;
+    cursor: pointer;
+}
+.fw-500 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.active {
+    background-color: var(--color-primary);
+}
+
+.textiles-type {
+    margin-top: 15px;
+}
+
+.color {
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.count {
+    width: max-content;
+    gap: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.minus, .plus {
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.counter {
+    display: block;
+    width: 100px;
+    background-color: #F0F0F0;
+    padding: 8px;
+    /* min-width: 520px; */
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 500px;
+    background-color: var(--color-primary);
+}
+.decor-line {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background-color: red;
+    border-radius: 20px;
+}
+.results-title {
+    font-size: 1.75rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+}
+
+.form input, textarea {
+    padding: 15px;
+    border: 0;
+    font-size: 1rem;
+}
+
+.form-btn {
+    width: max-content;
+    border: 0;
+}
+
+.tab-item {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+

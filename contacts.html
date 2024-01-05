@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%= title %> </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>    
+  <header class="header">
+    <!-- Main nav -->
+    <nav class="navbar bg">
+      <a href="/" class="logo"><img src="./img/logo.png" alt="" class="logo__img"/></a>
+      <ul class="menu">
+        <li class="menu__item"><a href="tracker.html" class="menu__link">Трекер</a></li>
+        <li class="menu__item"><a href="calculator.html" class="menu__link">Калькулятор</a></li>
+        <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+      </ul>
+      <a href="#" class="btn">Связаться</a>
+    </nav>
+
+    <!-- Burger menu -->
+    <nav class="burger_menu bg">
+      <a href="/"><img src="./img/logo.png" alt="" class="logo__img"/></a>
+      <img src="./img/burger-menu-icon.svg" class="burgerBtn" alt="burger-menu-icon.svg">
+      <ul class="mob_menu bg">
+        <li class="menu__item"><a href="/client/tracker.html" class="menu__link">Трекер</a></li>
+        <li class="menu__item"><a href="/client/calculator" class="menu__link">Калькулятор</a></li>
+        <li class="menu__item"><a href="/client/contacts" class="menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="body"></div>
+    <!-- Hz -->
+  </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container wrap">
+                <div class="wrap-col-1">
+                    <h1 class="title">Основа iVory - репутация на первом месте!</h1>
+                    <p class="description">
+                        Подход iVory к заказчикам: Подсказывать Идти на встречу 
+                        Постоянная коммуникация
+                    </p>
+                </div>
+
+                <div class="wrap wrap-col-2">
+                    <p class="about">
+                        <span class="about__title">О компании</span> <br>
+                        Мастерская одежды - iVory основана в начале 2023 
+                        года 22 января. Начиная свою деятельность с нуля, без знаний и 
+                        опыта. За год смогла вырасти в одну из крупнейших производителей 
+                        одежды в Кыргызстане, с объемом мощности 3000 единиц в месяц.
+                    </p>
+                    <p class="about-2">
+                        Ниже вы сами можете посчитать нужную вам продукцию онлайн. 
+                        Команда разработчиков QIT создала инструмент для автоматического 
+                        вычисления стоимости изделия за единицу и минимальную партию от 200 штук.
+                    </p>
+
+                    <div class="wrap">
+                        <p class="info">
+                            Также на сайте имеется доступ к вашему заказу, 
+                            в точности смотреть на каком этапе находится ваша партия одежды.
+                        </p>
+                        <a href="/calculator" class="calculator">
+                        <span class="dot"></span>
+                        Посчитать стоимость
+                        </a>
+                    </div>
+                </div>          
+            </div>
+        </section>
+    </main>
+
+<script src="js/app.js"></script>
+</body>
+</html>
